@@ -12,7 +12,7 @@
 
 ### Demonstration
 
-![](/captures/netflix-clone.gif)
+![](/captures/netflix-clone-gif.gif)
 
 ### Preview
 
