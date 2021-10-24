@@ -14,13 +14,6 @@
 
 ![](/captures/netflixcutted.gif)
 
-### Preview
-
-![](/captures/cap1.jpg)
-![](/captures/cap2.jpg)
-![](/captures/cap3.jpg)
-
-
 ---
 
 #### Social Media
