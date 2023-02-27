@@ -1,16 +1,8 @@
-## Netflix Clone with ReactJS
+# Netflix Clone with ReactJS
+This is a Netflix clone app built using ReactJS. The app allows users to search for movies, series, documentaries, and more. Users can also see similar works, view detailed information about movies, and filter searches by genre, including the highest-rated, trending, comedy, action, adventure, and other genres.
 
-> #### by guilhermevialle
-
-### Similarity
-
-- You can search works: movies, series, documentary and more
-- It's possible to see similar works from them
-- See all about movie
-- Search by genres
-- See the highest rated, trending, comedy, action, adventure and more genres...
-
-### Demonstration
+## Demo
+Here is a demo of the app in action:
 
 ![](/captures/netflixcutted.gif)
 
