@@ -7,57 +7,57 @@ import TopBar from "./components/TopBar";
 export const Data = createContext();
 
 const App = () => {
-    const Reduce = (state, action) => {
-        switch (action.type) {
-            case "change-inp":
-                return {
-                    ...state,
-                    inpval: action.value,
-                };
-            case "change-movieID":
-                return {
-                    ...state,
-                    movieID: action.value,
-                };
-            case "search-movies":
-                return {
-                    ...state,
-                    movies: action.value,
-                };
-            case "change-currentPosition":
-                return {
-                    ...state,
-                    currentPos: action.value,
-                };
-            default:
-                return state;
-        }
-    };
+  const Reduce = (state, action) => {
+    switch (action.type) {
+      case "change-inp":
+        return {
+          ...state,
+          inpval: action.value,
+        };
+      case "change-movieID":
+        return {
+          ...state,
+          movieID: action.value,
+        };
+      case "search-movies":
+        return {
+          ...state,
+          movies: action.value,
+        };
+      case "change-currentPosition":
+        return {
+          ...state,
+          currentPos: action.value,
+        };
+      default:
+        return state;
+    }
+  };
 
-    const ReduceInitalValue = {
-        inpval: "",
-        movies: [],
-        movieID: 0,
-        currentPos: [],
-    };
+  const ReduceInitalValue = {
+    inpval: "",
+    movies: [],
+    movieID: 0,
+    currentPos: [],
+  };
 
-    const [global, setGlobal] = useReducer(Reduce, ReduceInitalValue);
+  const [global, setGlobal] = useReducer(Reduce, ReduceInitalValue);
 
-    return (
-        <Router>
-            <Data.Provider value={{ global, setGlobal }}>
-                <TopBar />
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                </Switch>
-                <Route path="/search">
-                    <SearchPage />
-                </Route>
-            </Data.Provider>
-        </Router>
-    );
+  return (
+    <Router>
+      <Data.Provider value={{ global, setGlobal }}>
+        <TopBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Route path="/search">
+          <SearchPage />
+        </Route>
+      </Data.Provider>
+    </Router>
+  );
 };
 
 export default App;
